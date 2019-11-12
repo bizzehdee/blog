@@ -1,0 +1,19 @@
+baseURL = "https://www.bizzeh.com/"
+languageCode = "en-gb"
+title = "The Angry Dev"
+
+theme = "hyde"
+
+[params]
+  description = "Tutorials, guides, explanations and ramblings from a very angy man"
+
+[Menus]
+  main = [
+      {Name = "Github", URL = "https://github.com/bizzehdee/"},
+      {Name = "LinkedIn", URL = "https://www.linkedin.com/in/bizzehdee/"}
+  ]
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+  series = "series"
