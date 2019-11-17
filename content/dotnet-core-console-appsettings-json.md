@@ -7,7 +7,7 @@ tags: ["dotnet", "core", "options", "appsettings"]
 
 Something that annoyingly does not come as standard in the dotnet core console application template, and, it is not documented anywhere with Microsoft is: appsettings.json.
 This comes as standard with ASP.NET Core applications, but no other applications, and the thing is, it is very simple to add to any dotnet core application.
-
+<!--more-->
 The first thing you will need to do is add the following nuget packages (at least) to your application:
 
 * Microsoft.Extensions.Configuration
