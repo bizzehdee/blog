@@ -20,7 +20,7 @@ Once you have the basics done, we can move on to the code:
 
 Your Program.cs file should now look something like this:
 
-```cs
+```csharp
 static void Main(string[] args)
 {
     var config = new ConfigurationBuilder()
