@@ -6,7 +6,7 @@ theme = "hyde"
 DisqusShortname = "bizzeh"
 
 [Author] 
-  name = "Darren"
+  name = "darren"
 
 [params]
   description = "Tutorials, guides, explanations and ramblings from a very angy man"

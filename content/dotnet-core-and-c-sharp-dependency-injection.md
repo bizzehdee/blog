@@ -1,7 +1,7 @@
 ---
 title: "dotnet Core and C# Dependency Injection"
 date: 2020-04-24T11:00:00Z
-draft: true
+draft: false
 tags: ["dotnet", "core", "di", "dependency injection", "c#", "ioc"]
 author: ["darren"]
 ---
@@ -52,6 +52,57 @@ public void CompletePurchase(double amount, string cardNumber, string address, s
 The problems with the above code are:
 
 * The first problem is that we directly instantiate `PaymentService` and `ShippingService`, so we risk triggering a HTTP call when trying to test
-* We would have to include test code paths into `PaymentService` and `ShippingService`, meaning that all code paths are not fully tested
-* 
+* We would have to include test code for `PaymentService` and `ShippingService`, or all code paths would not be fully tested
+* We do not control this code due to the external code paths
 
+What we should be doing is injecting the services via the class constructor, allowing us to swap out the implementations at will, with new implementations or with mock implementations.
+
+```csharp
+public class Checkout
+{
+  private IPaymentService _paymentService;
+  private IShippingService _shippingService;
+
+  public Checkout(IPaymentService paymentService, IShippingService shippingService) 
+  {
+    _paymentService = paymentService;
+    _shippingService = shippingService;
+  }
+
+  public void CompletePurchase(double amount, string cardNumber, string address, string city, string name) 
+  {
+    var successfullyCharged = _paymentService.Charge(int amount, cardNumber);
+
+    if (successfullyCharged) 
+    {
+      _shippingService.Ship(address, city, name);
+    }
+  }
+}
+```
+
+This code now:
+
+* Is only concerned about one thing, converting a charge into a shipment (where the actual charge, and shipping are performed by another service)
+* We control the entirity of this code
+* We can swap out different implementations of `IPaymentService` and `IShippingService` allowing us to create mock implementations so that we can test just `CompletePurchase` in isolation.
+
+## Enter dotnet core
+
+The built-in container is represented by an `IServiceProvider` implementation that supports constructor injection by default. The classes managed by the built-in IoC container are called services.
+
+ASP.NET Core allows us to register our application services with IoC container, in the `ConfigureServices` method of the `Startup` class. The `ConfigureServices` method includes a parameter of the `IServiceCollection` interface which is used to register application services
+
+```csharp
+public class Startup
+{
+    public void ConfigureServices(IServiceCollection services)
+    {
+        services.Add(new ServiceDescriptor(typeof(IPaymentService), new PaymentService()));      
+        services.Add(new ServiceDescriptor(typeof(IShippingService), new ShippingService()));        
+    }
+
+}
+```
+
+So IoC and DI in ASP.NET Core and dotnet core in general is very easy, and more or less built in.
