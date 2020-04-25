@@ -1,8 +1,9 @@
 ---
 title: "dotnet Core and C# Dependency Injection"
-date: 2019-11-28T11:22:44Z
+date: 2020-04-24T11:00:00Z
 draft: true
-tags: ["dotnet", "core", "di", "dependency injection", "c#"]
+tags: ["dotnet", "core", "di", "dependency injection", "c#", "ioc"]
+author: ["darren"]
 ---
 
 This is a short introduction into Dependency Injection for those who are new to dotnet core and C#, with an attempt to explain what it is, and how it works.

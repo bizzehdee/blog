@@ -2,8 +2,11 @@ baseURL = "https://www.bizzeh.com/"
 languageCode = "en-gb"
 title = "The Angry Dev"
 googleAnalytics = "UA-3629904-1"
-
 theme = "hyde"
+DisqusShortname = "bizzeh"
+
+[Author] 
+  name = "Darren"
 
 [params]
   description = "Tutorials, guides, explanations and ramblings from a very angy man"
@@ -18,3 +21,4 @@ theme = "hyde"
   category = "categories"
   tag = "tags"
   series = "series"
+  author = "author"
