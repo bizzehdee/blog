@@ -22,3 +22,15 @@ DisqusShortname = "bizzeh"
   tag = "tags"
   series = "series"
   author = "author"
+
+[outputs]
+home = ["HTML","FEED"]
+
+[mediaTypes]
+[mediaTypes."application/rss"]
+suffixes = ["xml"]
+
+[outputFormats]
+[outputFormats.FEED]
+mediatype = "application/rss"
+baseName = "feed"
