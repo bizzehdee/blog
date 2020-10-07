@@ -1,0 +1,22 @@
+trigger:
+- master
+
+pool:
+  vmImage: 'windows-latest'
+
+steps:
+- checkout: self
+  submodules: true
+  clean: true
+- task: HugoTask@1
+  displayName: Generate Site
+  inputs:
+    source: '$(Build.SourcesDirectory)'
+    destination: '$(Build.ArtifactStagingDirectory)'
+    baseURL: 'https://www.bizzeh.com/'
+
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    ArtifactName: 'content'
+    publishLocation: 'Container'
