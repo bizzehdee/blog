@@ -14,3 +14,9 @@ steps:
     source: '$(Build.SourcesDirectory)'
     destination: '$(Build.ArtifactStagingDirectory)'
     baseURL: 'https://www.bizzeh.com/'
+
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    ArtifactName: 'content'
+    publishLocation: 'Container'
