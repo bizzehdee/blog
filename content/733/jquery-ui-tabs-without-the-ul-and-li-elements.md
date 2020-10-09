@@ -2,6 +2,7 @@
 title: "jQuery UI Tabs without the ul and li elements"
 date: 2012-04-25T20:00:00+01:00
 draft: false
+tags: ["js", "javascript", "html", "webdesign"]
 author: ["darren"]
 ---
 

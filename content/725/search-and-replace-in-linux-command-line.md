@@ -2,6 +2,7 @@
 title: "Easy (and complex) Search and Replace in Linux Command Line"
 date: 2011-08-15T23:00:00+01:00
 draft: false
+tags: ["linux", "bash", "find", "replace", "perl"]
 author: ["darren"]
 ---
 I wanted to search and replace every file in a directory tree and find a URL that linked to /web-design and remove that part of the URL, and i also wanted to find the phrase "Web Design" in a link and replace it with "Affordable Web Design".

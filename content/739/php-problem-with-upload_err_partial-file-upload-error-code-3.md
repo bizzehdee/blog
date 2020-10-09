@@ -2,6 +2,7 @@
 title: "PHP Problem with UPLOAD_ERR_PARTIAL (File upload error code 3)"
 date: 2012-05-01T20:00:00+01:00
 draft: false
+tags: ["php", "file upload", "headers", "http"]
 author: ["darren"]
 ---
 
