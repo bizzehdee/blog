@@ -1,4 +1,4 @@
-baseURL = "https://www.bizzeh.com/"
+baseURL = "https://bizzeh.com/"
 languageCode = "en-gb"
 title = "The Angry Dev"
 googleAnalytics = "UA-3629904-1"
@@ -9,7 +9,7 @@ DisqusShortname = "bizzeh"
   name = "darren"
 
 [params]
-  description = "Tutorials, guides, explanations and ramblings from a very angy man"
+  description = "Programming and DevOps tutorials, guides, explanations and ramblings from a sometimes angy man"
 
 [Menus]
   main = [
