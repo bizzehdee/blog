@@ -6,9 +6,10 @@ tags: ["c++", "c", "cplusplus", "ai", "neural network"]
 author: ["darren"]
 ---
 
-(Originally based On [Neural Networks on C#](http://www.codeproject.com/Articles/16447/Neural-Networks-on-C))
-
 The C++ library ([source on github](https://github.com/bizzehdee/neuro)) is designed to be a core neural network library, implementing basic neurons, layers and networks and comes with some basic learning methods too. The library is complete enough for those who want to learn and understand neural networks and how they are put together, but by no means is intended to be a complete AI library.
+<!--more-->
+
+(Originally based On [Neural Networks on C#](http://www.codeproject.com/Articles/16447/Neural-Networks-on-C))
 
 ## Main Classes
 
