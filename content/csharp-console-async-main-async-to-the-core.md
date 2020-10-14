@@ -1,7 +1,7 @@
 ---
 title: "C# Console Async Main - Async Entry Point for Console Apps"
 date: 2020-10-14T09:00:00+01:00
-draft: true
+draft: false
 tags: ["dotnet", "console", "csharp", "async"]
 author: ["darren"]
 ---
