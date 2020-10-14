@@ -37,7 +37,7 @@ While this works, it looks dirty, and is an extra step we shouldnt need to be ta
 
 ## C# 7.1
 
-Now that we have C# 7.1, we get these new possible entry points for a console app.
+Now that we have C# 7.1, we get these new possible entry points for a console app. You also have the option of having the ```async``` keyword on each of these new entry points.
 
 ```csharp
 public static Task Main();
