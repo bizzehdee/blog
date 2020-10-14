@@ -10,7 +10,17 @@ This blog, and many others, are hosted using Amazon AWS. This one has a differen
 <!--more-->
 This site is built using [hugo](https://gohugo.io/), which is a "website generator" tool that lets you write your pages using markdown, combine that markdown with a theme, and generates a static html website with SEO friendly (optional) extensionless URLs.
 
-Once the hugo website is set up ([use the hugo quick start](https://gohugo.io/getting-started/quick-start/)), turn your hugo directory into a git repository.
+You first need to set your local copy of your hugo website, ([use the hugo quick start](https://gohugo.io/getting-started/quick-start/)) and add some content/posts.
+
+Now the hugo site is set up, and you have started adding content, we need somewhere to put the site that hugo generates, this is where amazon s3 comes in.
+
+If you do not already have one, sign up for an amazon aws account (its free to sign up).
+
+In your aws account, you will need to create an s3 bucket, and the name of the bucket should be the exact domain name you intend to use as your website domain name, the region would be best to be a region close to you, but as long as its on the same continent, it doesnt really matter. Under "set permissions" you need to uncheck "block all public access" and uncheck all its child check boxes too. Once created, go to properties > static website hosting and unable "use this bucket to host a website", set the index document to index.html and the error document to error.html and save. This should now give you an amazon s3 url to your bucket. If you upload a temporary index.html document, you should now be able to visit the s3 url and see the index page.
+
+![s3 bucket hosting config][example1]
+
+To have the website automatically built and deployed to your s3 bucket, you will need to set up a git repository (at github, or azure devops).
 
 ```cmd
 cd [path to hugo site dir with config.toml]
@@ -55,5 +65,16 @@ steps:
     publishLocation: 'Container'
 ```
 
-Save this YAML file and run a build, you should see that your markdown is pulled from github, and then devops generates your site for you, and uploads it to container storage named "content" within azure devops. A new build will be automatically run each time a commit is made to your master branch within github.
+Save this YAML file and run a build, you should see that your markdown is pulled from github, and then devops generates your site for you, and uploads it to container storage named "content" within azure devops (be sure that the baseURL matches your baseURL in your hugo config). A new build will be automatically run each time a commit is made to your master branch within github.
 
+***Option 1: (Hosted directly on s3 with no SSL)***
+
+If you do not want to go through the extra steps of having SSL, and you only want to set up a single website domain, then all you need to do is get your s3 domain from the s3 website setup step, and create a CNAME from the domain (same domain you named the bucket) to the s3 domain.
+
+Once the new domain has resolved correctly, you are done.
+
+***Option 2: (Hosted on s3 with cloudfront and SSL and multiple domains)***
+
+
+
+[example1]: /images/s3-bucket-hosting-1.png "s3 bucket hosting config"
