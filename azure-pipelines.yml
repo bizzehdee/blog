@@ -12,7 +12,7 @@ steps:
   displayName: Generate Site
   inputs:
     source: '$(Build.SourcesDirectory)'
-    destination: '$(Build.ArtifactStagingDirectory)'
+    destination: '$(Build.ArtifactStagingDirectory) --minify'
     baseURL: 'https://bizzeh.com/'
 
 - task: PublishBuildArtifacts@1
