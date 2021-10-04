@@ -26,3 +26,35 @@ It includes:
 - [x] Attachments
 
 Released under the BSD-3-Clause licence, and is also available for use as an easy to use [nuget package](https://www.nuget.org/packages/System.Net.Imap4/).
+
+**Connect to GMail**
+```csharp
+static IMapClient ConnectToClient()
+{
+    
+}
+```
+
+**Get email**
+```csharp
+static EmailMessage GetEmail(int id, IMapClient client)
+{
+    
+}
+```
+
+**Delete email**
+```csharp
+static EmailMessage DeleteEmail(int id, IMapClient client)
+{
+    
+}
+```
+
+**Get Attachment from email**
+```csharp
+static void GetAttachments(EmailMessage msg)
+{
+    
+}
+```
