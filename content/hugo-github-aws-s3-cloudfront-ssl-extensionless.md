@@ -1,7 +1,7 @@
 ---
 title: "Building a site with Hugo, using GitHub, Amazon S3 and CloudFront with HTTPS and extensionless URLs"
 date: 2021-03-10T08:00:00Z
-draft: true
+draft: false
 tags: ["blog", "hugo", "github", "aws", "s3", "cloudfront", "https", "devops"]
 author: ["darren"]
 ---
@@ -77,6 +77,4 @@ Once the new domain has resolved correctly, you are done.
 
 ***Option 2: (Hosted on s3 with cloudfront and SSL and optionally, multiple domains)***
 
-
-
-[example1]: /images/s3-bucket-hosting-1.png "s3 bucket hosting config"
+Coming soon :D
