@@ -9,6 +9,7 @@ tags: ["dotnet", "bittorrent", "csharp", "utp", "udp", "networking", "torrent", 
 While updating my [bittorrent library](https://github.com/bizzehdee/bzTorrent), I found that the uTP (Micro Transport Protocol) documentation is quite lacking, unless you already know how the protocol works, so here is my attempt to expand on the documentation that already exists in an effort to provide more information on implementing uTP.
 
 Information from [BEP 29](http://www.bittorrent.org/beps/bep_0029.html), [bittorrent/libutp](https://github.com/bittorrent/libutp) at github and from reverse engineering based on Wireshark UDP dumps.
+<!--more-->
 
 ## Notes
 
