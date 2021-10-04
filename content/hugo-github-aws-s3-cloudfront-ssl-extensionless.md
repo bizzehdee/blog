@@ -1,6 +1,6 @@
 ---
 title: "Building a site with Hugo, using GitHub, Amazon S3 and CloudFront with HTTPS and extensionless URLs"
-date: 2020-10-08T08:00:00Z
+date: 2021-03-10T08:00:00Z
 draft: true
 tags: ["blog", "hugo", "github", "aws", "s3", "cloudfront", "https", "devops"]
 author: ["darren"]
@@ -71,9 +71,11 @@ Save this YAML file and run a build, you should see that your markdown is pulled
 
 If you do not want to go through the extra steps of having SSL, and you only want to set up a single website domain, then all you need to do is get your s3 domain from the s3 website setup step, and create a CNAME from the domain (same domain you named the bucket) to the s3 domain.
 
+i.e. ```www.mysite.com -> CNAME -> www.mysite.com.s3-website-eu-west-1.amazonaws.com``` (depending on your region that you chose).
+
 Once the new domain has resolved correctly, you are done.
 
-***Option 2: (Hosted on s3 with cloudfront and SSL and multiple domains)***
+***Option 2: (Hosted on s3 with cloudfront and SSL and optionally, multiple domains)***
 
 
 
