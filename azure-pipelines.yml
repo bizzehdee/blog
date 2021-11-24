@@ -13,6 +13,7 @@ steps:
   inputs:
     source: '$(Build.SourcesDirectory)'
     destination: '$(Build.ArtifactStagingDirectory) --minify'
+    hugoVersion: '0.88.0'
     baseURL: 'https://bizzeh.com/'
 
 - task: PublishBuildArtifacts@1
