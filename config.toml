@@ -14,7 +14,7 @@ DisqusShortname = "bizzeh"
 [Menus]
   main = [
       {Name = "Github", URL = "https://github.com/bizzehdee/"},
-      {Name = "YouYube", URL = "https://www.youtube.com/channel/UCjGZwgZxkZDceaPXt84ndKw"}
+      {Name = "YouTube", URL = "https://www.youtube.com/channel/UCjGZwgZxkZDceaPXt84ndKw"}
   ]
 
 [taxonomies]
