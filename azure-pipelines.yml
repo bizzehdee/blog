@@ -8,7 +8,7 @@ steps:
 - checkout: self
   submodules: true
   clean: true
-- task: HugoTask@1
+- task: HugoTask@2
   displayName: Generate Site
   inputs:
     source: '$(Build.SourcesDirectory)'
