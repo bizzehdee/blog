@@ -12,9 +12,9 @@ steps:
 - task: "giuliovdev.hugo-extension.hugo-build-task-v2.HugoTask@2"
   inputs:
     source: '$(Build.SourcesDirectory)'
-    destination: '$(Build.ArtifactStagingDirectory) --minify'
+    destination: '$(Build.ArtifactStagingDirectory)'
     hugoVersion: '0.88.0'
-    additionalArgs: '--baseURL https://bizzeh.com/'
+    additionalArgs: '--baseURL https://bizzeh.com/ --minify'
 
 
 - task: PublishBuildArtifacts@1
