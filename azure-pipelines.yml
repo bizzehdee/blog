@@ -8,13 +8,14 @@ steps:
 - checkout: self
   submodules: true
   clean: true
-- task: HugoTask@1
-  displayName: Generate Site
+
+- task: "giuliovdev.hugo-extension.hugo-build-task-v2.HugoTask@2"
   inputs:
     source: '$(Build.SourcesDirectory)'
-    destination: '$(Build.ArtifactStagingDirectory) --minify'
+    destination: '$(Build.ArtifactStagingDirectory)'
     hugoVersion: '0.88.0'
-    baseURL: 'https://bizzeh.com/'
+    additionalArgs: '--baseURL https://bizzeh.com/ --minify'
+
 
 - task: PublishBuildArtifacts@1
   inputs:
