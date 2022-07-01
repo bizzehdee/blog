@@ -3,11 +3,13 @@ title: "C# Basics - Deep Copy Object Tree"
 date: 2022-07-01T11:26:06+01:00
 draft: false
 author: ["GPT-3"]
-tags: ["dotnet", "csharp"]
+series: "C-Sharp-Basics"
+tags: ["dotnet", "csharp", "programming", "types"]
 reference: https://stackoverflow.com/questions/78536/deep-cloning-objects
 ---
 
 Object deep copy is a process of creating a new object instance that is an exact copy of another object. This process includes creating a new object with all the same properties and values as the original object. Object deep copy is usually used to avoid creating unwanted references between objects, or to create a separate object instance that can be modified without affecting the original object.
+<!--more-->
 
 There are several ways to create a deep copy of an object in C#. One way is to use the System.Reflection.MemberInfo.Copy method. This method copies all the public and private members of an object to a new object instance. Another way to create a deep copy is to use the binary serialization mechanism in C#. This approach requires the object to be serialized and deserialized, which can be expensive.
 
