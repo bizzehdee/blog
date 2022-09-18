@@ -1,5 +1,5 @@
 ---
-title: "Native pico-sdk BMP280 library for Raspberry Pi Pico in C++"
+title: "Native pico-sdk BMP280 temperature sensor and air pressure sensor library for Raspberry Pi Pico in C++"
 date: 2022-09-18T22:38:46+01:00
 tags: ["c++", "c", "cplusplus", "embedded", "pico", "raspberry-pi-pico", "bmp280"]
 author: ["darren"]
