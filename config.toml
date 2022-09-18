@@ -34,3 +34,6 @@ suffixes = ["xml"]
 [outputFormats.FEED]
 mediatype = "application/rss"
 baseName = "feed"
+
+[markup.goldmark.renderer]
+unsafe= true
