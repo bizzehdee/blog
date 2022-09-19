@@ -17,7 +17,7 @@ You can add the library from the pico-lib's adding ```ili934x``` onto the end of
 target_link_libraries([your executable] pico_stdlib ili934x)
 ```
 
-You can then include "mpu6050.h" and use the following methods from the ```ili934x``` class.
+You can then include "ili934x.h" and use the following methods from the ```ili934x``` class.
 
  * setRotation(ILI934X_ROTATION rotation = R0DEG)
    * set the rotation of the display
