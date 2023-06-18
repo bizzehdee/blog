@@ -6,10 +6,10 @@ theme = "hyde"
 DisqusShortname = "bizzeh"
 
 [Author] 
-  name = "darren"
+  name = "darren horrocks"
 
 [params]
-  description = "Programming and DevOps tutorials, guides, explanations and ramblings from a sometimes angy man"
+  description = "Darren Horrocks explains various Programming and DevOps practices, with some guides, explanations and ramblings from a sometimes angy man"
 
 [Menus]
   main = [
