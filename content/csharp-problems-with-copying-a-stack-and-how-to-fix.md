@@ -3,7 +3,7 @@ title: "Problems With Copying a Stack<T> in C# and How to Fix It"
 date: 2020-10-13T09:35:53+01:00
 draft: false
 tags: ["dotnet", "csharp", "extension-method", "code"]
-author: ["darren"]
+author: ["darren horrocks"]
 ---
 
 In C# and in .NET in general, there is a generic stack class which accepts a single type parameter. The stack class is a FILO (first in last out) collection, and can be liked to stacking plates, you cannot remove the bottom plate, without first removing all the plates above it. The problem with the ```Stack<T>``` class is that it has an ```IEnumerable<T>``` constructor...

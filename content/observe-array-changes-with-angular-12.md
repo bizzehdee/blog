@@ -3,7 +3,7 @@ title: "Observe/React to Array Changes with Angular 12"
 date: 2022-04-11T22:37:34+01:00
 draft: false
 tags: ["angular", "angular12", "javascript", "js"]
-author: ["darren"]
+author: ["darren horrocks"]
 ---
 
 In angular 12, it is very simple to have the HTML of your component react to changes in the value of a single variable (or multiple variables).

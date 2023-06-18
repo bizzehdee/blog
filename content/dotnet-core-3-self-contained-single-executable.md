@@ -3,7 +3,7 @@ title: "dotnet core 3.0 Self Contained Single Executable (and other build optimi
 date: 2020-04-21T23:36:31+01:00
 draft: false
 tags: ["dotnet", "core", "c#", "optimisation", "aot", "publish-single-file", "publish-trimmed"]
-author: ["darren"]
+author: ["darren horrocks"]
 ---
 
 Applications feel more optimised when their binaries, or set of binaries are small. With dotnet core 3.0 there are some features built in that help facilitate this.

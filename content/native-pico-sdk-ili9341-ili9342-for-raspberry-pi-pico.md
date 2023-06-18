@@ -2,7 +2,7 @@
 title: "Native pico-sdk ILI9341/ILI9342 display drivere library for Raspberry Pi Pico in C++"
 date: 2022-09-19T20:08:23+01:00
 tags: ["c++", "c", "cplusplus", "embedded", "pico", "raspberry-pi-pico", "ILI9341", "display"]
-author: ["darren"]
+author: ["darren horrocks"]
 ---
 
 The ILI9341/ILI9342 works as display driver for a TFT display, and is available as either a standalone IC, or as a breakout board and is usually conntected up via SPI. I have added a [ILI9341 raspberry pi pico library](https://github.com/bizzehdee/pico-libs/tree/master/src/common/ili934x) as part of my group of libraries at the [pico-libs](https://github.com/bizzehdee/pico-libs/) repository on github.

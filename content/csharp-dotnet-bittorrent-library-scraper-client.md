@@ -3,7 +3,7 @@ title: "dotnet BitTorrent library written in C#"
 date: 2020-10-09T23:00:00+01:00
 draft: false
 tags: ["dotnet", "bittorrent", "csharp", "library", "torrent", "bt"]
-author: ["darren"]
+author: ["darren horrocks"]
 ---
 
 [System.Net.Torrent](https://github.com/bizzehdee/System.Net.Torrent) is an open source bittorrent scraper and peer wire implementation written in C#

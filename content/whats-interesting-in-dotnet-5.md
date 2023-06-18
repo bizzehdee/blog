@@ -2,7 +2,7 @@
 title: "What's New and Interesting in .NET 5"
 date: 2020-10-15T21:52:13+01:00
 draft: false
-author: ["darren"]
+author: ["darren horrocks"]
 tags: ["dotnet", "core", "net5", "vNext"]
 ---
 

@@ -3,7 +3,7 @@ title: "Why You Should Use Oauth OAuth 2.0 Tokens"
 date: 2022-04-14T21:25:28+01:00
 draft: false
 tags: ["auth","oauth","web","services"]
-author: ["darren"]
+author: ["darren horrocks"]
 ---
 
 An OAuth 2.0 access token is usually a base64 encoded string that the client uses when making requests to the server, and can hides the user's identity and other personal information from the client app/website and anybody listening in on the line.

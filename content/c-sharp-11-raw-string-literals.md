@@ -2,7 +2,7 @@
 title: "C Sharp 11 Raw String Literals"
 date: 2022-04-25T22:59:26+01:00
 tags: ["dotnet", "csharp", "programming"]
-author: ["darren"]
+author: ["darren horrocks"]
 ---
 
 If you work with literal strings that can contain quotes or  language strings such as JSON, XML, HTML, SQL or Regex, [raw literal strings](https://github.com/dotnet/csharplang/issues/4304) may be the best new feature of C# 11.

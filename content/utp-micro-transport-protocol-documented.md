@@ -2,7 +2,7 @@
 title: "uTP Micro Transport Protocol Documented"
 date: 2021-10-04T23:54:05+01:00
 draft: false
-author: ["darren"]
+author: ["darren horrocks"]
 tags: ["dotnet", "bittorrent", "csharp", "utp", "udp", "networking", "torrent", "bt"]
 ---
 

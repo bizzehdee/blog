@@ -3,7 +3,7 @@ title: "Simple C++ Neural Network Library"
 date: 2020-10-11T09:58:35+01:00
 draft: false
 tags: ["c++", "c", "cplusplus", "ai", "neural network"]
-author: ["darren"]
+author: ["darren horrocks"]
 ---
 
 The C++ library ([source on github](https://github.com/bizzehdee/neuro)) is designed to be a core neural network library, implementing basic neurons, layers and networks and comes with some basic learning methods too. The library is complete enough for those who want to learn and understand neural networks and how they are put together, but by no means is intended to be a complete AI library.

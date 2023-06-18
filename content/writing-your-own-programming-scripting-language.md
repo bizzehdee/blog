@@ -3,7 +3,7 @@ title: "Writing Your Own Programming/Scripting Language in C#"
 date: 2020-10-07T21:00:00+01:00
 draft: true
 tags: ["c#", "dotnet", "dotnetcore", "programming", "scripting"]
-author: ["darren"]
+author: ["darren horrocks"]
 ---
 
 A couple of years ago, I looked to replace a full fledged javascript engine in a project i was working on, with a much more basic engine, since all that was being used was the base math and logic operators.

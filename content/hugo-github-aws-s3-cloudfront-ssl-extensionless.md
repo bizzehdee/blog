@@ -3,7 +3,7 @@ title: "Building a site with Hugo, using GitHub, Amazon S3 and CloudFront with H
 date: 2021-03-10T08:00:00Z
 draft: false
 tags: ["blog", "hugo", "github", "aws", "s3", "cloudfront", "https", "devops"]
-author: ["darren"]
+author: ["darren horrocks"]
 ---
 
 This blog, and many others, are hosted using Amazon AWS. This one has a difference, it is almost completely free to host (and was completely free for the first year) because of Hugo, Amazon S3, Cloudfront, lambda@edge, Azure DevOps and (optionally) GitHub.

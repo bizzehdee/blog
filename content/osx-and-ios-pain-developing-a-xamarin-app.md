@@ -3,7 +3,7 @@ title: "The Pain of Developing a Xamarin App for OSX and iOS"
 date: 2017-01-09T23:00:00+01:00
 draft: false
 tags: ["c#", "osx", "dotnet", "xamarin"]
-author: ["darren"]
+author: ["darren horrocks"]
 ---
 
 When developing applications for Windows, even Windows 10 or some flavour of Linux or BSD, you pretty much have free reign over what you want to do. When it comes to Android, iOS and Mac OSX, it is a different story.

@@ -3,7 +3,7 @@ title: "Creating Windows and Linux background services in dotnet core 3.0/3.1"
 date: 2020-04-30T19:00:00+01:00
 draft: false
 tags: ["dotnet", "core", "dotnetcore", "worker", "service", "background", "windows", "linux", "systemd"]
-author: ["darren"]
+author: ["darren horrocks"]
 ---
 
 There are times when you need an application to just sit there in the background and deal with the same repetitive task over and over again.

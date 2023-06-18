@@ -3,7 +3,7 @@ title: "Adding appsettings.json options to a dotnet core console application"
 date: 2019-11-17T10:08:04Z
 draft: false
 tags: ["dotnet", "core", "options", "appsettings"]
-author: ["darren"]
+author: ["darren horrocks"]
 ---
 
 Something that annoyingly does not come as standard in the dotnet core console application template, and, it is not documented anywhere with Microsoft is: appsettings.json.

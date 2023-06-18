@@ -3,7 +3,7 @@ title: "C# Console Async Main - Async Entry Point for Console Apps"
 date: 2020-10-14T09:00:00+01:00
 draft: false
 tags: ["dotnet", "console", "csharp", "async"]
-author: ["darren"]
+author: ["darren horrocks"]
 ---
 
 As of C# 7.1, it is possible with console apps, to have async all the way to the entry point. The previous constraints of the entry point have been the same all the way up to this point, and similar to the entry point in C/C++ apps. The C# entry point method must be ```static```, the name of the method must be ```Main```, the return type must be either void or int and finally, the method can accept zero arguments, or exactly one argument of ```string[]```, which contains the command arguments.

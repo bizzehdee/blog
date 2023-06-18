@@ -4,7 +4,7 @@ date: 2019-11-12T20:42:47Z
 draft: false
 series: "Microservices"
 tags: ["microservices", "azure", "servicebus", "dotnet", "dotnetcore", "service"]
-author: ["darren"]
+author: ["darren horrocks"]
 ---
 
 Everybody has heard of the term "microservice", but not many people know what they are, how they work, or how to implement one.

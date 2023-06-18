@@ -3,7 +3,7 @@ title: "IMAP4 Client Protocol Library for C# and .NET"
 date: 2021-01-13T18:25:21Z
 draft: false
 tags: ["dotnet", "imap", "csharp", "library", "email", "imap4"]
-author: ["darren"]
+author: ["darren horrocks"]
 ---
 
  [System.Net.Imap4](https://github.com/bizzehdee/System.Net.Imap4) is an IMAP4 client library for .NET written in C# with support for parsing multipart, attachments, html and plain parts.

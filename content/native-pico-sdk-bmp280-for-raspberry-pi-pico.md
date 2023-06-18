@@ -2,7 +2,7 @@
 title: "Native pico-sdk BMP280 temperature sensor and air pressure sensor library for Raspberry Pi Pico in C++"
 date: 2022-09-18T22:38:46+01:00
 tags: ["c++", "c", "cplusplus", "embedded", "pico", "raspberry-pi-pico", "bmp280"]
-author: ["darren"]
+author: ["darren horrocks"]
 ---
 
 The BMP280 works as an ambient temperature sensor and air pressure sensor, and is available as either a standalone IC, or as a breakout board and is usually conntected up via I2C (IIC, ICC or I<sup>2</sup>C, depending on your preference). I have written a [bmp280 raspberry pi pico library](https://github.com/bizzehdee/pico-libs/tree/master/src/common/bmp280) as part of a group of libraries over at the [pico-libs](https://github.com/bizzehdee/pico-libs/) repository on github.

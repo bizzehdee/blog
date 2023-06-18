@@ -3,7 +3,7 @@ title: "How To: Move Windows 11 Taskbar/Start Menu Back to the Left"
 date: 2022-10-30T20:47:13Z
 draft: false
 tags: ["how-to", "windows", "windows-11"]
-author: ["darren"]
+author: ["darren horrocks"]
 ---
 
 As we all know, Windows 11 introduced the new centre aligned taskbar. The very first thing that most people wanted to do was move it back to the left, but it does not seem to be immediately obvious how to do so.
