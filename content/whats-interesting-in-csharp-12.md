@@ -1,7 +1,7 @@
 ---
 title: "New and Interesting Features in C# 12"
 date: 2023-07-13T00:08:00+01:00
-draft: true
+draft: false
 author: ["darren horrocks"]
 tags: ["dotnet", "csharp", "net8", "visualstudio"]
 ---
