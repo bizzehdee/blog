@@ -1,12 +1,12 @@
-+++
-date = "2017-01-09T22:42:10Z"
-title = "The Battle for Proper Working Hours"
-draft = false
-tags = ["hours","flexitime","rant"]
-categories = ["not-code"]
-description = "Going from a fixed 40 hour week, to a semi-flexible 37.5 hour week"
-
-+++
+---
+date: "2017-01-09T22:42:10Z"
+title: "The Battle for Proper Working Hours"
+draft: false
+author: ["darren horrocks"]
+tags: ["hours","flexitime","rant"]
+categories: ["not-code"]
+description: "Going from a fixed 40 hour week, to a semi-flexible 37.5 hour week"
+---
 
 For many developers, the *normal* 9 - 5 shift does not really apply.
 Development is a creative job, and you cannot force more creativity from more hours.

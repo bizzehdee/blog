@@ -1,12 +1,12 @@
-+++
-draft = false
-tags = ["rant","work","blame"]
-categories = ["not-code", "work"]
-description = "Blame culture in business, who should we blame? Should we blame?"
-date = "2017-01-18T14:33:10Z"
-title = "Who should we blame?"
-
-+++
+---
+draft: false
+tags: ["rant","work","blame"]
+categories: ["not-code", "work"]
+description: "Blame culture in business, who should we blame? Should we blame?"
+date: "2017-01-18T14:33:10Z"
+title: "Who should we blame?"
+author: ["darren horrocks"]
+---
 
 Something that we all know is that there is a blame culture in business. 
 Something that not many people know is that we don’t need a blame culture in business.
