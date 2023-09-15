@@ -2,7 +2,8 @@
 title: "Linus Tech Tips, Gamers Nexus, Ethics and Responsibility"
 date: 2023-08-15T14:04:59+01:00
 draft: false
-tags: ["linus-tech-tips", "ltt", "gn", "gamers-nexus", "opinion"]
+tags: ["not-code","linus-tech-tips", "ltt", "gn", "gamers-nexus", "opinion"]
+categories: ["not-code"]
 author: ["darren horrocks"]
 ---
 Yesterday, Gamers Nexus posted a video titled ["The Problem with Linus Tech Tips: Accuracy, Ethics, & Responsibility"](https://www.youtube.com/watch?v=FGW3TPytTjc), which addressed several concerns that GN have with Linus Tech Tips, the LMG Labs, and Linus Himself.

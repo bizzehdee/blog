@@ -2,7 +2,8 @@
 title: "Yes You Can Block Elon Musk on Twitter"
 date: 2023-07-28T21:21:46+01:00
 draft: false
-categories: ["not-code", "twitter", "elon-musk", "how-to"]
+tags: ["not-code", "twitter", "elon-musk", "how-to"]
+categories: ["not-code"]
 author: ["darren horrocks"]
 ---
 
