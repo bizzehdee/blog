@@ -9,7 +9,7 @@ DisqusShortname = "bizzeh"
   name = "darren horrocks"
 
 [params]
-  description = "Darren Horrocks explains various Programming and DevOps practices, with some guides, explanations and ramblings from a sometimes angy man"
+  description = "Darren Horrocks explains various Programming and DevOps practices, with some guides, explanations and ramblings from a sometimes angry man"
 
 [Menus]
   main = [
