@@ -4,7 +4,8 @@ date: 2023-09-18T08:19:18+01:00
 draft: false
 author: ["darren horrocks"]
 tags: ["not-code", "work", "software-development"]
-categories: ["not-code"]
+categories: ["not-code", "work"]
+series: "in-the-workplace"
 ---
 
 In recent years, the Zero Trust security model has gained prominence as a robust approach to safeguarding digital assets. However, when applied within a software development company, this policy can inadvertently hinder the productivity of software developers. This article delves into the specific challenges that arise when implementing a Zero Trust policy in this context, shedding light on why it may not be the most conducive approach.

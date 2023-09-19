@@ -4,7 +4,8 @@ date: 2023-09-19T09:00:00+01:00
 draft: false
 author: ["darren horrocks"]
 tags: ["not-code", "work", "company-culture", "work-environment"]
-categories: ["not-code"]
+categories: ["not-code", "work"]
+series: "in-the-workplace"
 ---
 
 Companies often claim that the operate a "no blame culture", and then joke tht its actually a "know blame culture". A "no blame" culture and a "know blame" culture may sound similar, but they have significant differences in their underlying principles and how they are practiced within a software development organization. This is particularly notable in the software development industry due to its unique characteristics.

@@ -4,7 +4,8 @@ title: "The Battle for Proper Working Hours"
 draft: false
 author: ["darren horrocks"]
 tags: ["hours","flexitime","rant"]
-categories: ["not-code"]
+categories: ["not-code", "work"]
+series: "in-the-workplace"
 description: "Going from a fixed 40 hour week, to a semi-flexible 37.5 hour week"
 ---
 

@@ -1,10 +1,11 @@
 ---
 title: "The Divide: Understanding the Gap between Sales and Software Development in Software Companies"
-date: 2023-09-20T09:09:31+01:00
+date: 2023-09-21T09:09:31+01:00
 draft: true
 author: ["darren horrocks"]
 tags: ["not-code", "work", "company-culture", "work-environment"]
-categories: ["not-code"]
+categories: ["not-code", "work"]
+series: "in-the-workplace"
 ---
 
 In the intricate landscape of software companies, a notable divide often emerges between the sales and software development departments. Sales is hailed for its immediate revenue impact, while development is sometimes misconstrued as a cost center. This article aims to dissect the reasons behind this prevalent gap and shed light on the distinct roles that each department plays in a company's success.

@@ -4,7 +4,8 @@ date: 2023-09-15T11:03:54+01:00
 draft: false
 author: ["darren horrocks"]
 tags: ["not-code", "work", "software-development"]
-categories: ["not-code"]
+categories: ["not-code", "work"]
+series: "in-the-workplace"
 ---
 
 In the fast-paced world of software development, achieving high levels of productivity is paramount for successful project completion. However, counterintuitively, overmanaging software developers can often lead to reduced efficiency and hinder the overall progress of a project. This article explores the reasons behind this phenomenon and suggests alternative approaches to foster a more productive work environment.
