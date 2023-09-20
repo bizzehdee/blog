@@ -1,16 +1,16 @@
 ---
-title: "When Is Automating Away a Coworkers Job Considered Bullying"
-date: 2023-09-20T08:23:10+01:00
-draft: true
+title: "When Does Automating Away a Coworkers Job Cross The Line into Bullying"
+date: 2023-09-20T08:00:10+01:00
+draft: false
 author: ["darren horrocks"]
 tags: ["not-code", "work", "software-development", "workplace"]
 categories: ["not-code", "work"]
 series: "in-the-workplace"
 ---
 
-In a previous job, I found that a coworker was spending a full work week building an excel spreadsheet from our Azure DevOps data, so I spent about an hour writing a small program to replace his entire job. This triggered an arms race between myself and the coworker where they would slighly change what they added to the excel spreadsheet, and I would add that into the simple program (and then make it better). This went on for about 2 weeks until I was called into the managers office and was told that I was bullying the coworker by doing this, which i disagreed with. 
+In a previous job, I found that a coworker was spending a full work week building an excel spreadsheet from our Azure DevOps data, so I spent about an hour writing a small program to replace his entire job. This triggered an arms race between myself and the coworker where they would slightly change what they added to the excel spreadsheet, and I would add that into the simple program (and then make it better). This went on for about 2 weeks until I was called into the manager’s office and was told that I was bullying the coworker by doing this, which I disagreed with.
 
-So with that, automating a manual process in the workplace is not inherently bullying. However, if the automation is implemented without proper consideration for the impact on employees, it can potentially be perceived as bullying or create a hostile work environment. There are both positive and negative aspects (which include aspects that could be considered bullying), they are as follows:
+This lead me to thinking about, when does automating away a coworkers job cross the line into bullying. Automating a manual process in the workplace is not inherently bullying. However, if the automation is implemented without proper consideration for the impact on employees, it can potentially be perceived as bullying or create a hostile work environment. There are both positive and negative aspects (which include aspects that could be considered bullying), they are as follows:
 <!--more-->
 
 ## Positive Aspects of Automating a Manual Process in the Workplace:
