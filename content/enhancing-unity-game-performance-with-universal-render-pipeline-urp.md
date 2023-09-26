@@ -36,8 +36,14 @@ URP offers a Shader Graph that allows for visually designing shaders. Keep these
 
 Optimise textures to reduce memory usage and enhance rendering performance:
 
-* Use compressed texture formats like ASTC, BC7, or ETC2.
+* Use compressed texture formats like **ASTC**, **BC7**, or **ETC2**.
 * Combine multiple textures into atlases to reduce draw calls
+    * **Generate or Collect Textures:** Gather the individual textures you want to include in the atlas.
+    * **Create Atlas Texture:** Use a graphics editing tool (e.g., Photoshop) to create a new image file, which will serve as the atlas.
+    * **Arrange Textures:** Place the individual textures within the atlas, organizing them to minimize wasted space.
+    * **Import into Unity:** Import the atlas texture into your Unity project.
+    * **Apply Atlas to Materials:** Modify materials to use the atlas texture instead of individual textures.
+    * **Adjust UV Mapping:** Ensure that UV mapping for the objects corresponds correctly to the atlas.
 
 ## Implement Occlusion Culling
 
@@ -47,6 +53,35 @@ Occlusion culling prevents the rendering of objects that are not visible to the 
 
 LOD techniques involve using lower-polygon models or simplified textures for distant objects. URP provides tools for LOD implementation.
 
+### Prepare LOD Models
+
+* Create simplified versions of your object with fewer polygons for varying distances.
+
+### Add LOD Group
+
+* Select the object in the Hierarchy.
+* Add the LOD Group component.
+
+### Assign LOD Levels
+
+* In the LOD Group, add LOD levels and assign corresponding models.
+* Set Screen Relative Transition Height for each level.
+
+### Test and Adjust
+
+* Enter Play mode to observe LOD switching.
+* Fine-tune transition distances if needed.
+
+### Optimise LOD Models
+
+* Ensure LOD models are well-optimised for performance.
+
+### Verify Performance
+
+* Test on different devices to ensure desired performance improvements.
+
+LOD is effective for objects like terrain, foliage, and complex structures. Apply it to objects with a significant impact on performance.
+
 ## Particle System Optimisation
 
 Efficiently managing particle systems is crucial for performance:
@@ -54,11 +89,11 @@ Efficiently managing particle systems is crucial for performance:
 * Limit the number of particles emitted at a time.
 * Use GPU simulation if suitable for your project.
 
-## Minimize Overdraw
+## Minimise Overdraw
 
 Overdraw occurs when multiple transparent objects are rendered on top of each other. This can be mitigated with techniques such as:
 
-* Sorting objects by depth to minimize overdraw.
+* Sorting objects by depth to minimise overdraw.
 * Utilizing techniques like depth pre-pass.
 
 ## Optimise Post-Processing Effects
