@@ -10,7 +10,7 @@ The Universal Render Pipeline (URP) is a powerful tool that can significantly im
 
 <!--more-->
 
-## Utilize GPU Instancing
+## Utilise GPU Instancing
 
 GPU instancing allows multiple objects with the same material to be rendered in a single draw call. This reduces the overhead associated with making separate draw calls for each object.
 
