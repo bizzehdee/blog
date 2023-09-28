@@ -24,8 +24,8 @@ A balanced work-life equation is essential for sustained productivity. When empl
 ## Sharper Focus and More Creativity
 Long working hours can lead to mental fatigue, which can stifle creativity and problem-solving abilities. A reduction in working hours lets developers approach tasks with renewed focus and a fresh perspective, resulting in more innovative solutions and quicker development cycles.
 
-## Optimized Time Management
-Shorter work hours encourage better time management. Knowing they have limited hours encourages developers to prioritize tasks and approach assignments with more determination. This often leads to a more organized and streamlined workflow.
+## Optimised Time Management
+Shorter work hours encourage better time management. Knowing they have limited hours encourages developers to prioritise tasks and approach assignments with more determination. This often leads to a more organised and streamlined workflow.
 
 ## Prioritizing Health and Well-being
 Physical and mental well-being are essential for sustained productivity. Longer working hours can lead to health issues, both physical and psychological. By reducing working hours, employers contribute to the overall health and well-being of their workforce. Healthy, well-rested employees are more likely to perform optimally, leading to fewer sick days and increased job satisfaction.
@@ -37,4 +37,4 @@ In the ever-evolving tech industry, ongoing learning and skill development are v
 Knowing they have a more manageable workload, developers are likely to approach their tasks with increased motivation and enthusiasm. This often leads to higher levels of engagement with their work, resulting in higher-quality output.
 
 # Advocating for Shorter Work Hours
-As employees, it's essential to recognize the benefits of shorter work hours. If you believe this approach could enhance productivity in your workplace, consider initiating a conversation with management. Presenting the evidence and making a case for more efficient work hours can lead to a more productive and fulfilling work environment for everyone involved. Remember, it's a step towards a healthier, more balanced, and ultimately more successful work culture.
+As employees, it's essential to recognise the benefits of shorter work hours. If you believe this approach could enhance productivity in your workplace, consider initiating a conversation with management. Presenting the evidence and making a case for more efficient work hours can lead to a more productive and fulfilling work environment for everyone involved. Remember, it's a step towards a healthier, more balanced, and ultimately more successful work culture.
