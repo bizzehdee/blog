@@ -1,5 +1,5 @@
 ---
-title: "Comparing Graphql and Odata: Which is Best and When?"
+title: "Comparing GraphQL and OData: Which is Best and When?"
 date: 2023-10-05T10:24:40+01:00
 draft: false
 tags: ["graphql", "odata", "programming"]
