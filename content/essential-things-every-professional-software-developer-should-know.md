@@ -1,5 +1,5 @@
 ---
-title: "Essential Things Every Professional Software Developers Should Know"
+title: "Essential Things Every Professional Software Developer Should Know"
 date: 2023-10-06T09:34:35+01:00
 draft: false
 author: ["darren horrocks"]
