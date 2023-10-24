@@ -66,8 +66,8 @@ You will also require the manufacturer's software for your SSD, such as Samsung 
 * Optional Step (if "Block SID" config is persistent):
   * If the POST screen indicates that the "Block SID" configuration is persistent, re-enable it either in the BIOS or via Windows Powershell:
     * Open Powershell as admin in Windows 2 Go.
-    * Run: $tpm = gwmi -n root\cimv2\security\microsofttpm win32_tpm
-    * Run: $tpm.SetPhysicalPresenceRequest(96)
+    * Run: ```$tpm = gwmi -n root\cimv2\security\microsofttpm win32_tpm```
+    * Run: ```$tpm.SetPhysicalPresenceRequest(96)```
   * Reboot.
 
 * Enjoy better SSD performance... 😁
