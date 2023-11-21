@@ -10,13 +10,13 @@ As applications grow in complexity, the need for responsive and efficient code b
 
 <!--more-->
 
-## 1. Understanding Asynchronous Programming:
+## 1. Understanding Asynchronous Programming
    - Explanation of synchronous vs. asynchronous operations.
    - The importance of asynchronous programming for responsiveness and scalability.
    - Introduction to the `async` and `await` keywords.
 
-## 2. Basics of Asynchronous Methods:
-   ### a. Async Methods:
+## 2. Basics of Asynchronous Methods
+   ### a. Async Methods
    - Creating asynchronous methods using the `async` keyword.
    - Returning `Task` or `Task<T>` from asynchronous methods.
    - **C# Example:**
@@ -28,7 +28,7 @@ As applications grow in complexity, the need for responsive and efficient code b
      }
      ```
 
-   ### b. Awaitable Types:
+   ### b. Awaitable Types
    - Understanding types that can be awaited (e.g., `Task`, `Task<T>`, `ValueTask<T>`).
    - Handling asynchronous operations without blocking the thread.
    - **C# Example:**
@@ -40,8 +40,8 @@ As applications grow in complexity, the need for responsive and efficient code b
      }
      ```
 
-## 3. Asynchronous Patterns:
-   ### a. Async and Await Best Practices:
+## 3. Asynchronous Patterns
+   ### a. Async and Await Best Practices
    - Best practices for using `async` and `await` keywords.
    - Avoiding blocking calls in asynchronous methods.
    - **C# Example:**
@@ -54,7 +54,7 @@ As applications grow in complexity, the need for responsive and efficient code b
      }
      ```
 
-   ### b. Task.WhenAll and Task.WhenAny:
+   ### b. Task.WhenAll and Task.WhenAny
    - Utilizing `Task.WhenAll` for parallel asynchronous operations.
    - Using `Task.WhenAny` for scenarios where the first completed task is needed.
    - **C# Example:**
@@ -66,7 +66,7 @@ As applications grow in complexity, the need for responsive and efficient code b
      }
      ```
 
-## 4. Exception Handling in Asynchronous Code:
+## 4. Exception Handling in Asynchronous Code
    - Handling exceptions in asynchronous code.
    - Using `try`, `catch`, and `finally` with asynchronous methods.
    - **C# Example:**
@@ -85,8 +85,8 @@ As applications grow in complexity, the need for responsive and efficient code b
      }
      ```
 
-## 5. Asynchronous File I/O and Network Operations:
-   ### a. Reading and Writing Files Asynchronously:
+## 5. Asynchronous File I/O and Network Operations
+   ### a. Reading and Writing Files Asynchronously
    - Performing file I/O operations asynchronously.
    - Using `StreamReader`, `StreamWriter`, and `FileStream` asynchronously.
    - **C# Example:**
@@ -102,7 +102,7 @@ As applications grow in complexity, the need for responsive and efficient code b
      }
      ```
 
-   ### b. Making Asynchronous Web Requests:
+   ### b. Making Asynchronous Web Requests
    - Utilizing asynchronous HTTP requests using `HttpClient`.
    - Handling responses asynchronously.
    - **C# Example:**
@@ -116,7 +116,7 @@ As applications grow in complexity, the need for responsive and efficient code b
      }
      ```
 
-## 6. Synchronization Context and Task.Run:
+## 6. Synchronization Context and Task.Run
    - Understanding the Synchronization Context and its impact on asynchronous code.
    - Using `Task.Run` to offload CPU-bound work to a separate thread.
    - **C# Example:**
