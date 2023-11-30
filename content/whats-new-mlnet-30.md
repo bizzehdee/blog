@@ -3,6 +3,7 @@ title: "Whats New in ML.NET 3.0"
 date: 2023-11-28T09:23:19Z
 draft: false
 author: ["darren horrocks"]
+tags: ["dotnet", "mlnet"]
 ---
 
 ML.NET is an open-source, cross-platform machine learning framework for .NET developers, offering exciting capabilities in deep learning, data processing, and more. Given that Microsoft [recently announced ML.NET 3.0](https://devblogs.microsoft.com/dotnet/announcing-ml-net-3-0/), let's take a closer look at what ML.NET 3.0 has in store.
