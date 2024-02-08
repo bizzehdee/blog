@@ -1,0 +1,253 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>Sudoku Solver</title>
+<script type="text/javascript" src="jquery-3.7.1.slim.min.js"></script>
+<script type="text/javascript">
+<!--
+function read_matrix() {
+  var ar = new Array();
+  
+  for(var y=0; y<9; y++) {
+    ar[y] = new Array();
+    for(var x=0; x<9; x++) {
+      var box = $('#box_' + (y+1) + '_' + (x+1));
+      ar[y][x] = box.val() != '' ? box.val() : 0;
+    }
+  }
+  
+  return ar;
+}
+
+function deep_copy(orig) {
+  var ar = new Array();
+  
+  for(var y=0; y<9; y++) {
+    ar[y] = new Array();
+    for(var x=0; x<9; x++) {
+      ar[y][x] = orig[y][x];
+    }
+  }
+  
+  return ar;
+}
+
+function permissable(matrix, y, x) {
+  var m_ok = new Array(true, true, true, true, true, true, true, true, true);
+  
+  for(var i=0; i<9; i++) {
+    if(matrix[i][x] == 0) continue;
+    
+    m_ok[matrix[i][x]-1] = false;
+  }
+  
+  for(var i=0; i<9; i++) {
+    if(matrix[y][i] == 0) continue;
+    
+    m_ok[matrix[y][i]-1] = false;
+  }
+  
+  var iy = ((Math.floor(y/3))*3);
+  var ix = ((Math.floor(x/3))*3);
+  
+  for(var _y=iy; _y<iy+3; _y++) {
+    for(var _x=ix; _x<ix+3; _x++) {
+      //alert("checking " + _y + " " + _x);
+      if(matrix[_y][_x] == 0) continue;
+      
+      m_ok[matrix[_y][_x]-1] = false;
+    }  
+  }
+  
+  //alert(m_ok);
+  var ret = new Array();
+  for(var i=0; i<9; i++) {
+    if(m_ok[i]) ret.push(i+1);
+  }
+  
+  return ret;
+}
+
+function solve(matrix) {
+  while(true) {
+    var m_opts = new Array();
+    
+    for(var y=0; y<9; y++) {
+      for(var x=0; x<9; x++) {
+        if(matrix[y][x] != 0) continue;
+        
+        var p = permissable(matrix, y, x);
+        if(p.length == 0) {
+          //alert("Noope");
+          return false;
+        }
+        
+        m_opts.push(new Array(y,x,p));
+      }
+    }
+    
+    if(m_opts.length == 0) {
+      return matrix;
+    }
+    
+    var m_opt = m_opts[0];
+    for(var i=0; i<m_opts.length; i++) {
+      if(m_opts[i][2].length < m_opt[2].length) m_opt = m_opts[i];
+    }
+    
+    //if we only have 1 option, we have the solution for this square
+    if(m_opt[2].length == 1) {
+      matrix[m_opt[0]][m_opt[1]] = m_opt[2];
+      continue;
+    }
+    
+    for(var i=0; i<m_opt[2].length; i++) {
+      var dc = deep_copy(matrix);
+      dc[m_opt[0]][m_opt[1]] = m_opt[2][i];
+      
+      var r = solve(dc);
+      
+      if(r != false) {
+        return r;
+      }
+    }
+    
+    return false;
+  }
+}
+
+$(function() {
+  $('input:text[value=""]').css({color: 'red'});
+  $('#solve').click(function() {
+    var m = solve(read_matrix());
+    
+    for(var y=0; y<9; y++) {
+      for(var x=0; x<9; x++) {
+        $('#box_' + (y+1) + '_' + (x+1)).val(m[y][x]);
+      }
+    }
+  });
+});
+//-->
+</script>
+
+<style type="text/css">
+input {
+  width: 35px; height: 35px; font-size: 35px; border: none; text-align: center;
+}
+</style>
+</head>
+
+<body>
+
+
+<table cellpadding="0" cellspacing="0" style="width: 325px; border-collapse: collapse;">
+  <tr>
+    <td style="height: 35px; width: 35px; border: 1px silver dashed;"><input id="box_1_1" name="box_1_1" type="text" maxlength="1"/></td>
+    <td style="height: 35px; width: 35px; border: 1px silver dashed;"><input id="box_1_2" name="box_1_2" type="text" maxlength="1"/></td>
+    <td style="height: 35px; width: 35px; border: 1px silver dashed; border-right: 1px black solid;"><input id="box_1_3" name="box_1_3" type="text" maxlength="1"/></td>
+    <td style="height: 35px; width: 35px; border: 1px silver dashed;"><input id="box_1_4" name="box_1_4" type="text" maxlength="1"/></td>
+    <td style="height: 35px; width: 35px; border: 1px silver dashed;"><input id="box_1_5" name="box_1_5" type="text" maxlength="1"/></td>
+    <td style="height: 35px; width: 35px; border: 1px silver dashed; border-right: 1px black solid;"><input id="box_1_6" name="box_1_6" type="text" maxlength="1"/></td>
+    <td style="height: 35px; width: 35px; border: 1px silver dashed;"><input id="box_1_7" name="box_1_7" type="text" maxlength="1"/></td>
+    <td style="height: 35px; width: 35px; border: 1px silver dashed;"><input id="box_1_8" name="box_1_8" type="text" maxlength="1"/></td>
+    <td style="height: 35px; width: 35px; border: 1px silver dashed;"><input id="box_1_9" name="box_1_9" type="text" maxlength="1"/></td>
+  </tr>
+  <tr>
+    <td style="height: 35px; width: 35px; border: 1px silver dashed;">
+    <input id="box_2_1" name="box_2_1" type="text" maxlength="1"/></td>
+    <td style="height: 35px; width: 35px; border: 1px silver dashed;"><input id="box_2_2" name="box_2_2" type="text" maxlength="1"/></td>
+    <td style="height: 35px; width: 35px; border: 1px silver dashed; border-right: 1px black solid;"><input id="box_2_3" name="box_2_3" type="text" maxlength="1"/></td>
+    <td style="height: 35px; width: 35px; border: 1px silver dashed;"><input id="box_2_4" name="box_2_4" type="text" maxlength="1"/></td>
+    <td style="height: 35px; width: 35px; border: 1px silver dashed;"><input id="box_2_5" name="box_2_5" type="text" maxlength="1"/></td>
+    <td style="height: 35px; width: 35px; border: 1px silver dashed; border-right: 1px black solid;"><input id="box_2_6" name="box_2_6" type="text" maxlength="1"/></td>
+    <td style="height: 35px; width: 35px; border: 1px silver dashed;"><input id="box_2_7" name="box_2_7" type="text" maxlength="1"/></td>
+    <td style="height: 35px; width: 35px; border: 1px silver dashed;"><input id="box_2_8" name="box_2_8" type="text" maxlength="1"/></td>
+    <td style="height: 35px; width: 35px; border: 1px silver dashed;"><input id="box_2_9" name="box_2_9" type="text" maxlength="1"/></td>
+  </tr>
+  <tr>
+    <td style="height: 35px; width: 35px; border: 1px silver dashed; border-bottom: 1px black solid;"><input id="box_3_1" name="box_3_1" type="text" maxlength="1"/></td>
+    <td style="height: 35px; width: 35px; border: 1px silver dashed; border-bottom: 1px black solid;"><input id="box_3_2" name="box_3_2" type="text" maxlength="1"/></td>
+    <td style="height: 35px; width: 35px; border: 1px silver dashed; border-right: 1px black solid; border-bottom: 1px black solid;"><input id="box_3_3" name="box_3_3" type="text" maxlength="1"/></td>
+    <td style="height: 35px; width: 35px; border: 1px silver dashed; border-bottom: 1px black solid;"><input id="box_3_4" name="box_3_4" type="text" maxlength="1"/></td>
+    <td style="height: 35px; width: 35px; border: 1px silver dashed; border-bottom: 1px black solid;"><input id="box_3_5" name="box_3_5" type="text" maxlength="1"/></td>
+    <td style="height: 35px; width: 35px; border: 1px silver dashed; border-right: 1px black solid; border-bottom: 1px black solid;"><input id="box_3_6" name="box_3_6" type="text" maxlength="1"/></td>
+    <td style="height: 35px; width: 35px; border: 1px silver dashed; border-bottom: 1px black solid;"><input id="box_3_7" name="box_3_7" type="text" maxlength="1"/></td>
+    <td style="height: 35px; width: 35px; border: 1px silver dashed; border-bottom: 1px black solid;"><input id="box_3_8" name="box_3_8" type="text" maxlength="1"/></td>
+    <td style="height: 35px; width: 35px; border: 1px silver dashed; border-bottom: 1px black solid;"><input id="box_3_9" name="box_3_9" type="text" maxlength="1"/></td>
+  </tr>
+  <tr>
+    <td style="height: 35px; width: 35px; border: 1px silver dashed;"><input id="box_4_1" name="box_4_1" type="text" maxlength="1"/></td>
+    <td style="height: 35px; width: 35px; border: 1px silver dashed;"><input id="box_4_2" name="box_4_2" type="text" maxlength="1"/></td>
+    <td style="height: 35px; width: 35px; border: 1px silver dashed; border-right: 1px black solid;"><input id="box_4_3" name="box_4_3" type="text" maxlength="1"/></td>
+    <td style="height: 35px; width: 35px; border: 1px silver dashed;"><input id="box_4_4" name="box_4_4" type="text" maxlength="1"/></td>
+    <td style="height: 35px; width: 35px; border: 1px silver dashed;"><input id="box_4_5" name="box_4_5" type="text" maxlength="1"/></td>
+    <td style="height: 35px; width: 35px; border: 1px silver dashed; border-right: 1px black solid;"><input id="box_4_6" name="box_4_6" type="text" maxlength="1"/></td>
+    <td style="height: 35px; width: 35px; border: 1px silver dashed;"><input id="box_4_7" name="box_4_7" type="text" maxlength="1"/></td>
+    <td style="height: 35px; width: 35px; border: 1px silver dashed;"><input id="box_4_8" name="box_4_8" type="text" maxlength="1"/></td>
+    <td style="height: 35px; width: 35px; border: 1px silver dashed;"><input id="box_4_9" name="box_4_9" type="text" maxlength="1"/></td>
+  </tr>
+  <tr>
+    <td style="height: 35px; width: 35px; border: 1px silver dashed;"><input id="box_5_1" name="box_5_1" type="text" maxlength="1"/></td>
+    <td style="height: 35px; width: 35px; border: 1px silver dashed;"><input id="box_5_2" name="box_5_2" type="text" maxlength="1"/></td>
+    <td style="height: 35px; width: 35px; border: 1px silver dashed; border-right: 1px black solid;"><input id="box_5_3" name="box_5_3" type="text" maxlength="1"/></td>
+    <td style="height: 35px; width: 35px; border: 1px silver dashed;"><input id="box_5_4" name="box_5_4" type="text" maxlength="1"/></td>
+    <td style="height: 35px; width: 35px; border: 1px silver dashed;"><input id="box_5_5" name="box_5_5" type="text" maxlength="1"/></td>
+    <td style="height: 35px; width: 35px; border: 1px silver dashed; border-right: 1px black solid;"><input id="box_5_6" name="box_5_6" type="text" maxlength="1"/></td>
+    <td style="height: 35px; width: 35px; border: 1px silver dashed;"><input id="box_5_7" name="box_5_7" type="text" maxlength="1"/></td>
+    <td style="height: 35px; width: 35px; border: 1px silver dashed;"><input id="box_5_8" name="box_5_8" type="text" maxlength="1"/></td>
+    <td style="height: 35px; width: 35px; border: 1px silver dashed;"><input id="box_5_9" name="box_5_9" type="text" maxlength="1"/></td>
+  </tr>
+  <tr>
+    <td style="height: 35px; width: 35px; border: 1px silver dashed; border-bottom: 1px black solid;"><input id="box_6_1" name="box_6_1" type="text" maxlength="1"/></td>
+    <td style="height: 35px; width: 35px; border: 1px silver dashed; border-bottom: 1px black solid;"><input id="box_6_2" name="box_6_2" type="text" maxlength="1"/></td>
+    <td style="height: 35px; width: 35px; border: 1px silver dashed; border-right: 1px black solid; border-bottom: 1px black solid;"><input id="box_6_3" name="box_6_3" type="text" maxlength="1"/></td>
+    <td style="height: 35px; width: 35px; border: 1px silver dashed; border-bottom: 1px black solid;"><input id="box_6_4" name="box_6_4" type="text" maxlength="1"/></td>
+    <td style="height: 35px; width: 35px; border: 1px silver dashed; border-bottom: 1px black solid;"><input id="box_6_5" name="box_6_5" type="text" maxlength="1"/></td>
+    <td style="height: 35px; width: 35px; border: 1px silver dashed; border-right: 1px black solid; border-bottom: 1px black solid;"><input id="box_6_6" name="box_6_6" type="text" maxlength="1"/></td>
+    <td style="height: 35px; width: 35px; border: 1px silver dashed; border-bottom: 1px black solid;"><input id="box_6_7" name="box_6_7" type="text" maxlength="1"/></td>
+    <td style="height: 35px; width: 35px; border: 1px silver dashed; border-bottom: 1px black solid;"><input id="box_6_8" name="box_6_8" type="text" maxlength="1"/></td>
+    <td style="height: 35px; width: 35px; border: 1px silver dashed; border-bottom: 1px black solid;"><input id="box_6_9" name="box_6_9" type="text" maxlength="1"/></td>
+  </tr>
+  <tr>
+    <td style="height: 35px; width: 35px; border: 1px silver dashed;"><input id="box_7_1" name="box_7_1" type="text" maxlength="1"/></td>
+    <td style="height: 35px; width: 35px; border: 1px silver dashed;"><input id="box_7_2" name="box_7_2" type="text" maxlength="1"/></td>
+    <td style="height: 35px; width: 35px; border: 1px silver dashed; border-right: 1px black solid;"><input id="box_7_3" name="box_7_3" type="text" maxlength="1"/></td>
+    <td style="height: 35px; width: 35px; border: 1px silver dashed;"><input id="box_7_4" name="box_7_4" type="text" maxlength="1"/></td>
+    <td style="height: 35px; width: 35px; border: 1px silver dashed;"><input id="box_7_5" name="box_7_5" type="text" maxlength="1"/></td>
+    <td style="height: 35px; width: 35px; border: 1px silver dashed; border-right: 1px black solid;"><input id="box_7_6" name="box_7_6" type="text" maxlength="1"/></td>
+    <td style="height: 35px; width: 35px; border: 1px silver dashed;"><input id="box_7_7" name="box_7_7" type="text" maxlength="1"/></td>
+    <td style="height: 35px; width: 35px; border: 1px silver dashed;"><input id="box_7_8" name="box_7_8" type="text" maxlength="1"/></td>
+    <td style="height: 35px; width: 35px; border: 1px silver dashed;"><input id="box_7_9" name="box_7_9" type="text" maxlength="1"/></td>
+  </tr>
+  <tr>
+    <td style="height: 35px; width: 35px; border: 1px silver dashed;"><input id="box_8_1" name="box_8_1" type="text" maxlength="1"/></td>
+    <td style="height: 35px; width: 35px; border: 1px silver dashed;"><input id="box_8_2" name="box_8_2" type="text" maxlength="1"/></td>
+    <td style="height: 35px; width: 35px; border: 1px silver dashed; border-right: 1px black solid;"><input id="box_8_3" name="box_8_3" type="text" maxlength="1"/></td>
+    <td style="height: 35px; width: 35px; border: 1px silver dashed;"><input id="box_8_4" name="box_8_4" type="text" maxlength="1"/></td>
+    <td style="height: 35px; width: 35px; border: 1px silver dashed;"><input id="box_8_5" name="box_8_5" type="text" maxlength="1"/></td>
+    <td style="height: 35px; width: 35px; border: 1px silver dashed; border-right: 1px black solid;"><input id="box_8_6" name="box_8_6" type="text" maxlength="1"/></td>
+    <td style="height: 35px; width: 35px; border: 1px silver dashed;"><input id="box_8_7" name="box_8_7" type="text" maxlength="1"/></td>
+    <td style="height: 35px; width: 35px; border: 1px silver dashed;"><input id="box_8_8" name="box_8_8" type="text" maxlength="1"/></td>
+    <td style="height: 35px; width: 35px; border: 1px silver dashed;"><input id="box_8_9" name="box_8_9" type="text" maxlength="1"/></td>
+  </tr>
+  <tr>
+    <td style="height: 35px; width: 35px; border: 1px silver dashed;"><input id="box_9_1" name="box_9_1" type="text" maxlength="1"/></td>
+    <td style="height: 35px; width: 35px; border: 1px silver dashed;"><input id="box_9_2" name="box_9_2" type="text" maxlength="1"/></td>
+    <td style="height: 35px; width: 35px; border: 1px silver dashed; border-right: 1px black solid;"><input id="box_9_3" name="box_9_3" type="text" maxlength="1"/></td>
+    <td style="height: 35px; width: 35px; border: 1px silver dashed;"><input id="box_9_4" name="box_9_4" type="text" maxlength="1"/></td>
+    <td style="height: 35px; width: 35px; border: 1px silver dashed;"><input id="box_9_5" name="box_9_5" type="text" maxlength="1"/></td>
+    <td style="height: 35px; width: 35px; border: 1px silver dashed; border-right: 1px black solid;"><input id="box_9_6" name="box_9_6" type="text" maxlength="1"/></td>
+    <td style="height: 35px; width: 35px; border: 1px silver dashed;"><input id="box_9_7" name="box_9_7" type="text" maxlength="1"/></td>
+    <td style="height: 35px; width: 35px; border: 1px silver dashed;"><input id="box_9_8" name="box_9_8" type="text" maxlength="1"/></td>
+    <td style="height: 35px; width: 35px; border: 1px silver dashed;"><input id="box_9_9" name="box_9_9" type="text" maxlength="1"/></td>
+  </tr>
+</table>
+<br/>
+<br/>
+<input id="solve" type="button" value="Solve" style="width: 200px; border: 1px black solid; padding: 3px; font-size: 28px; height: 42px;"/>
+</body>
+
+</html>
