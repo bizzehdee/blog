@@ -1,0 +1,41 @@
+{{ define "main" -}}
+<div class="posts">
+{{ range $index, $p := (.Paginator 10).Pages -}}
+<article class="post">
+  <h1 class="post-title">
+    <a href="{{ .Permalink }}">
+      {{ if .Params.draft -}}
+        [DRAFT] 
+      {{- end }}
+      {{ .Title }}</a>
+  </h1>
+  <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z0700" }}" class="post-date">posted {{ .Date.Format "Mon, Jan 2, 2006" }}</time>
+  {{ if .Params.series -}}
+  <span class="post-info">as part of the <a href="/series/{{ lower .Params.series }}">{{ lower .Params.series }}</a> series</span>
+  {{- end }}
+  {{ if .Params.author -}}<span class="post-info">by {{ range $i, $e := .Params.author }}{{ if $i }}, {{ end }}{{ $a := lower $e }}<a href="/author/{{ replace $a " " "-" }}">{{ $a }}</a>{{ end }}</span>{{ else }}{{- end }}
+  
+  {{ .Summary }}
+
+  {{ if .Truncated }}
+  <div class="read-more-link">
+    <a href="{{ .RelPermalink }}" title="{{ .Title }}">Read More…</a>
+  </div>
+  {{ end }}
+  {{ if modBool $index 3 -}}
+  <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1154639188214641"
+     data-ad-slot="1432210987"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+  {{- end }}
+</article>
+{{- end }}
+
+{{ template "_internal/pagination.html" . }}
+</div>
+{{- end }}

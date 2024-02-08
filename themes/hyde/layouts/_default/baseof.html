@@ -1,0 +1,26 @@
+{{ partial "head.html" . }}
+  <body class="{{ .Site.Params.themeColor }} {{if .Site.Params.layoutReverse}}layout-reverse{{end}}">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1154639188214641"
+    crossorigin="anonymous"></script>
+
+  {{ partial "sidebar.html" . }}
+    <main class="content container">
+    {{ block "main" . -}}{{- end }}
+    </main>
+
+    {{ $jquery := resources.Get "js/jquery-3.7.1.slim.min.js" }}
+    {{ $fresco := resources.Get "js/fresco.min.js" }}
+    {{ $site := resources.Get "js/site.js" }}
+    {{ $js := slice $jquery $fresco $site | resources.Concat "js/bundle.js" | minify }}
+
+    <script type="text/javascript" src="{{ $js.RelPermalink }}"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6TKG8TMJC5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-6TKG8TMJC5');
+    </script>
+  </body>
+</html>

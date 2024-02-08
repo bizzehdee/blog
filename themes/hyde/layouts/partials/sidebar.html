@@ -1,0 +1,25 @@
+<aside class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <a href="{{ .Site.BaseURL }}"><h1>{{ .Site.Title }}</h1></a>
+      <p class="lead">
+      {{ with .Site.Params.description }} {{.}} {{ else }}An elegant open source and mobile first theme for <a href="http://hugo.spf13.com">hugo</a> made by <a href="http://twitter.com/mdo">@mdo</a>. Originally made for Jekyll.{{end}}
+      </p>
+    </div>
+
+    <nav>
+      <ul class="sidebar-nav">
+        <li><a href="{{ .Site.BaseURL }}">Home</a> </li>
+        {{ range .Site.Menus.main -}}
+          <li><a href="{{.URL}}"> {{ .Name }} </a></li>
+        {{- end }}
+      </ul>
+    </nav>
+    <div>
+      <a href="https://www.reddit.com/submit?url={{ .Permalink }}&title={{ .Title }}" title="Share to reddit" rel="external" target="_blank"><img src="/icons/reddit.png" alt="Share to reddit" width="32" height="32" style="display: inline-block;" /></a>
+      <a href="https://www.facebook.com/sharer/sharer.php?href={{ .Permalink }}" title="Share to facebook" rel="external" target="_blank"><img src="/icons/facebook-circular-logo.png" alt="Share to facebook" width="32" height="32" style="display: inline-block;" /></a>
+      <a href="https://www.twitter.com/intent/tweet?url={{ .Permalink }}&text={{ .Title }}" title="Share to twitter" rel="external" target="_blank"><img src="/icons/twitter.png" alt="Share to twitter" width="32" height="32" style="display: inline-block;" /></a>
+    </div>
+    <p>{{ with .Site.Params.copyright }}{{.}}{{ else }}&copy; {{ now.Format "2006"}}. All rights reserved. {{end}}</p>
+  </div>
+</aside>

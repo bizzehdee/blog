@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"{{with .Site.LanguageCode}} xml:lang="{{.}}" lang="{{.}}"{{end}}>
+<head>
+  
+  <link href="https://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  {{ if .IsHome -}}
+  <title>{{ .Site.Title }} &middot; {{ .Site.Params.description }}</title>
+  {{- else -}}
+  <title>{{ .Title }} &middot; {{ .Site.Title }}</title>
+  {{- end }}
+  <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}" />
+  {{ if .Params.tags -}}<meta name="keywords" content="{{ range .Params.tags }}{{ . }},{{ end }}" />{{- end }}
+  
+  
+
+  {{ if and (eq .Kind "taxonomy") (eq .Type "categories")}}
+  <meta name="robots" content="noindex, follow"/>
+  {{ else }}
+  <meta name="robots" content="index, follow"/>
+  {{ end }}
+  {{ if or (eq .Kind "home") (eq .Kind "page")}}
+  {{ if isset .Params "canonical" }}
+  <link rel="canonical" href="{{ .Params.Canonical}}" />
+  {{ else }}
+  <link rel="canonical" href="{{ .Permalink}}" />
+  {{ end }}
+  {{ end }}
+  <meta property="og:title" content="{{ .Title }}" />
+  <meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}" />
+  <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}" />
+  <meta property="og:url" content="{{ .Permalink }}" />
+
+  <!-- CSS -->
+  <link type="text/css" rel="stylesheet" href="{{ .Site.BaseURL }}css/print.css" media="print">
+
+  {{ $poole := resources.Get "css/poole.css" }}
+  {{ $highlightjs := resources.Get "css/highlightjs.css" }}
+  {{ $hyde := resources.Get "css/hyde.css" }}
+  {{ $fresco := resources.Get "css/fresco.css" }}
+  {{ $css := slice $poole $highlightjs $hyde $fresco | resources.Concat "css/bundle.css" | minify }}
+  <link rel="stylesheet" type="text/css" href="{{ $css.RelPermalink }}"/>
+
+  {{ partial "head_fonts.html" . }}
+
+  <!-- RSS etc -->
+  {{ range .AlternativeOutputFormats -}}
+    {{ printf `<link href="%s" rel="%s" type="%s" title="%s" />` .Permalink .Rel .MediaType.Type $.Site.Title | safeHTML }}
+  {{ end -}}
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  {{ partial "hook_head_end.html" . }}
+</head>
