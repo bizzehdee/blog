@@ -15,7 +15,8 @@ enableRobotsTXT = true
 [Menus]
   main = [
       {Name = "Github", URL = "https://github.com/bizzehdee/"},
-      {Name = "YouTube", URL = "https://www.youtube.com/channel/UCjGZwgZxkZDceaPXt84ndKw"},
+      {Name = "Twitch", URL = "https://www.twitch.tv/bizzehdee"},
+      {Name = "YouTube", URL = "https://www.youtube.com/@bizzehdee"},
       {Name = "LinkedIn", URL = "https://www.linkedin.com/in/bizzehdee"}
   ]
 
