@@ -17,7 +17,7 @@ enableRobotsTXT = true
       {Name = "Github", URL = "https://github.com/bizzehdee/"},
       {Name = "Twitch", URL = "https://www.twitch.tv/bizzehdee"},
       {Name = "YouTube", URL = "https://www.youtube.com/@bizzehdee"},
-      {Name = "LinkedIn", URL = "https://www.linkedin.com/in/bizzehdee"}
+      {Name = "ko-fi", URL = "https://ko-fi.com/bizzehdee"}
   ]
 
 [taxonomies]
