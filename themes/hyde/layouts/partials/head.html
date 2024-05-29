@@ -18,7 +18,7 @@
   
   
 
-  {{ if and (eq .Kind "taxonomy") (eq .Type "categories")}}
+  {{ if or (eq .Kind "taxonomy") (eq .Type "term")}}
   <meta name="robots" content="noindex, follow"/>
   {{ else }}
   <meta name="robots" content="index, follow"/>
