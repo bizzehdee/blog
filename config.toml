@@ -4,7 +4,7 @@ title = "The Angry Dev"
 googleAnalytics = "UA-3629904-1"
 theme = "hyde"
 DisqusShortname = "bizzeh"
-enableRobotsTXT = true
+enableRobotsTXT = false
 
 [Author] 
   name = "darren horrocks"
