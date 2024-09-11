@@ -1,5 +1,5 @@
 ---
-title: "Why Copilot Making Programmers Worse at Programming"
+title: "Why Copilot is Making Programmers Worse at Programming"
 date: 2024-09-11T11:47:58+01:00
 draft: false
 tags: ["opinion", "software-development", "copilot", "llm", "ai"]
