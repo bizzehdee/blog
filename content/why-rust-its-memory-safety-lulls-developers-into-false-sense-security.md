@@ -8,7 +8,7 @@ author: ["darren horrocks"]
 
 Rust has garnered significant attention in the programming world for its focus on memory safety without the need for a garbage collector, making it an appealing option for systems programming, where safety and performance are both critical. By preventing entire categories of bugs like data races, buffer overflows, and null pointer dereferencing at compile time, Rust has earned a reputation as a "safe" language. However, this very focus on memory safety can lull developers into a false sense of security, leading them to overlook other kinds of programming errors, potentially causing even more serious bugs. Here’s why.
 
-<!--more -->
+<!--more-->
 
 ## **The Memory Safety Halo Effect**
 
