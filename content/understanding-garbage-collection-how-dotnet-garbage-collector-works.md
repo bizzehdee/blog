@@ -3,6 +3,7 @@ title: "Understanding Garbage Collection - How the dotnet Garbage Collector Work
 date: 2025-02-05T13:27:20Z
 draft: false
 author: ["darren horrocks"]
+tags: ["dotnet", "debugging", "garbage-collection", "programming"]
 ---
 
 Garbage collection (GC) is a fundamental component of the .NET runtime, responsible for managing memory automatically and ensuring efficient use of resources. With .NET 8, Microsoft has continued refining the garbage collector, improving performance, reducing latency, and enhancing overall efficiency. This article dives into how the .NET 8 GC works, its key improvements, and how developers can optimise memory usage.
