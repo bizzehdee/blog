@@ -15,6 +15,7 @@ enableRobotsTXT = false
 [Menus]
   main = [
       {Name = "Github", URL = "https://github.com/bizzehdee/"},
+      {Name = "LeetCode", URL = "https://leetcode.com/u/z44ZesDGI3/"},
       {Name = "Twitch", URL = "https://www.twitch.tv/bizzehdee"},
       {Name = "YouTube", URL = "https://www.youtube.com/@bizzehdee"},
       {Name = "ko-fi", URL = "https://ko-fi.com/bizzehdee"}
