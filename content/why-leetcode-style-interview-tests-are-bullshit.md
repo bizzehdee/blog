@@ -1,14 +1,14 @@
 ---
 title: "Why Leetcode Style Interview Tests Are Bullshit"
-date: 2025-06-05T09:24:04+01:00
-draft: true
+date: 2025-06-09T09:24:04+01:00
+draft: false
 author: ["darren horrocks"]
 tags: ["software-development", "work", "interviews", "leetcode"]
 ---
 
 Everybody has heard of the leetcode style interview tests, and given their prominence in the tech news recently, you won't be surprised to find out that this is another story highlighting their inherent flaws.
 
-Yesterday, after a remote interview on teams, I was given a set of 3 different leetcode style interview test questions. I was told to take "no more than 3 hours total" and to "write it using typescrypt".
+Recently, after a remote interview on teams, I was given a set of 3 different leetcode style interview test questions. I was told to take "no more than 3 hours total" and to "write it using typescrypt".
 
 39 minutes later, I had completed and submitted all 3 tests, and all 3 tests pass all test cases. So now you ask, what's the problem?
 
