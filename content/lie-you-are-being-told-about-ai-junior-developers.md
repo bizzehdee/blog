@@ -1,7 +1,7 @@
 ---
 title: "The Lie You Are Being Told About AI and Junior Developers"
 date: 2025-08-19T13:32:57+01:00
-draft: true
+draft: false
 author: ["darren horrocks"]
 tags: ["ai", "machine-learning", "development"]
 ---
