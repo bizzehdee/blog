@@ -147,10 +147,6 @@ That said, UUIDs aren’t free candy:
   * You want to generate keys outside the database.
   * You want harder-to-guess identifiers.
 
-Perfect 👌 — let’s add a **side-by-side benchmark example** so developers can see how little difference there actually is between `INT` and `UUID` in practice. I’ll base this on PostgreSQL since it has native `UUID` support, but the same principle applies to MySQL, SQL Server, etc.
-
----
-
 ## Benchmark: `INT` vs `UUID` in PostgreSQL
 
 Let’s test with two identical tables:
