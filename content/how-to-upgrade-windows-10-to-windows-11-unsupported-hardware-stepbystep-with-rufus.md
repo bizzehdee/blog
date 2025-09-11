@@ -38,7 +38,7 @@ To follow this tutorial, make sure you have:
 2. Visit the [Microsoft Windows 11 download page](https://www.microsoft.com/software-download/windows11).
 3. Choose **Download Windows 11 Disk Image (ISO)** and save the file.
 
-## 💻 Step 2: Create a Bootable Windows 11 USB with Rufus
+## Step 2: Create a Bootable Windows 11 USB with Rufus
 
 Now let’s prepare the installation media:
 
