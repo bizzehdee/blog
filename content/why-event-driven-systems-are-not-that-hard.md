@@ -209,11 +209,11 @@ Debugging = replay from the event log, no mystery black box.
 
 Event-driven systems **don’t have to be hard** when you leverage the right patterns and libraries:
 
-* **MediatR** → simple in-process events, evolves to distributed.
-* **MassTransit / NServiceBus** → cross-service pub/sub with retries, DLQs, observability baked in.
-* **Outbox pattern** → guarantees no event loss.
-* **OpenTelemetry** → distributed tracing across async boundaries.
-* **AsyncAPI / NSwag** → enforce clear event contracts.
-* **EventStoreDB** → full event sourcing + replay for debugging.
+* **MediatR**: simple in-process events, evolves to distributed.
+* **MassTransit / NServiceBus**: cross-service pub/sub with retries, DLQs, observability baked in.
+* **Outbox pattern**: guarantees no event loss.
+* **OpenTelemetry**: distributed tracing across async boundaries.
+* **AsyncAPI / NSwag**: enforce clear event contracts.
+* **EventStoreDB**: full event sourcing + replay for debugging.
 
 With these tools, most of the “hard” parts are already solved, so you can focus on domain modeling and business outcomes, not plumbing.
