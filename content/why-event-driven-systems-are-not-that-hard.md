@@ -6,7 +6,7 @@ tags: ["dotnet", "distributed", "event-driven", "programming"]
 author: ["darren horrocks"]
 ---
 
-Having recently read the article "[Why are Event-Driven Systems Hard?](https://newsletter.scalablethread.com/p/why-event-driven-systems-are-hard)", and having worked on several event-driven systems myself, I began to wonder why people so often frame these systems as inherently difficult. It’s true that event-driven and distributed systems **can** be hard to work with—especially if approached without the right mindset or tooling, but that doesn’t mean they **are** hard by default.
+Having recently read the article "[Why are Event-Driven Systems Hard?](https://newsletter.scalablethread.com/p/why-event-driven-systems-are-hard)", and having worked on several event-driven systems myself, I began to wonder why people so often frame these systems as inherently difficult. It’s true that event-driven and distributed systems **can** be hard to work with... especially if approached without the right mindset or tooling, but that doesn’t mean they **are** hard by default.
 
 In fact, many of the “hard parts” that architects and developers worry about such as eventual consistency, debugging asynchronous flows and ensuring reliability, are well understood and largely solved with modern practices. With the dotnet ecosystem (or any other mature ecosystem), frameworks, and observability platforms, implementing event-driven systems has become far more approachable than it was even a few years ago. The gap between theory and practice has narrowed significantly, making these architectures not only manageable but often the most straightforward option for scaling, decoupling, and evolving complex applications.
 
