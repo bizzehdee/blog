@@ -34,7 +34,7 @@ data-full-width-responsive="true"></ins>
 <script>
   (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
-{{ if .Site.DisqusShortname -}}
+{{ if .Site.Params.DisqusShortname -}}
 <h2>Comments</h2>
 {{ template "_internal/disqus.html" . }}
 {{- end }}

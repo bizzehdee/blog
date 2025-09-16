@@ -6,8 +6,6 @@ theme = "hyde"
 DisqusShortname = "bizzeh"
 enableRobotsTXT = false
 
-[Author] 
-  name = "darren horrocks"
 
 [params]
   description = "Darren Horrocks explains various Programming and DevOps practices, with some guides, explanations and ramblings from a sometimes angry man"
