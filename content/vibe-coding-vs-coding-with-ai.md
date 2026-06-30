@@ -1,6 +1,6 @@
 ---
 title: "Vibe Coding vs Coding with AI"
-date: 2026-07-30T13:59:17+01:00
+date: 2026-06-30T13:59:17+01:00
 draft: false
 tags: ["ai", "vibe-coding", "programming"]
 author: ["darren horrocks"]
