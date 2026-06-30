@@ -1,5 +1,5 @@
 ---
-title: "Amazon Q Sucks"
+title: "Amazon Q is Indescribably Bad"
 date: 2026-06-12T12:53:44+01:00
 draft: false
 author: ["darren horrocks"]
