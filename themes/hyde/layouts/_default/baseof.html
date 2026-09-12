@@ -11,7 +11,7 @@
     {{ $jquery := resources.Get "js/jquery-3.7.1.slim.min.js" }}
     {{ $fresco := resources.Get "js/fresco.min.js" }}
     {{ $site := resources.Get "js/site.js" }}
-    {{ $js := slice $jquery $fresco $site | resources.Concat "js/bundle.js" | minify }}
+    {{ $js := slice $jquery $fresco $site | resources.Concat "js/bundle.js" | minify | fingerprint }}
 
     <script type="text/javascript" src="{{ $js.RelPermalink }}"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-6TKG8TMJC5"></script>

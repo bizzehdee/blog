@@ -40,7 +40,7 @@
   {{ $highlightjs := resources.Get "css/highlightjs.css" }}
   {{ $hyde := resources.Get "css/hyde.css" }}
   {{ $fresco := resources.Get "css/fresco.css" }}
-  {{ $css := slice $poole $highlightjs $hyde $fresco | resources.Concat "css/bundle.css" | minify }}
+  {{ $css := slice $poole $highlightjs $hyde $fresco | resources.Concat "css/bundle.css" | minify | fingerprint }}
   <link rel="stylesheet" type="text/css" href="{{ $css.RelPermalink }}"/>
 
   {{ partial "head_fonts.html" . }}
