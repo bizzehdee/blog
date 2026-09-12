@@ -1,0 +1,2 @@
+{{- $price := string (.Params.price | default "0") -}}
+{{- if eq $price "0" }}Free{{ else }}{{ $price }}{{ end -}}

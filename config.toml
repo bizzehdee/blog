@@ -1,5 +1,5 @@
 baseURL = "https://www.darrenhorrocks.co.uk/"
-languageCode = "en-gb"
+locale = "en-gb"
 title = "The Angry Dev"
 googleAnalytics = "UA-3629904-1"
 theme = "hyde"
@@ -13,7 +13,7 @@ enableRobotsTXT = false
 [Menus]
   main = [
       {Name = "Github", URL = "https://github.com/bizzehdee/"},
-      {Name = "LeetCode", URL = "https://leetcode.com/u/z44ZesDGI3/"},
+      {Name = "Apps and Games", URL = "/apps"},
       {Name = "Twitch", URL = "https://www.twitch.tv/bizzehdee"},
       {Name = "YouTube", URL = "https://www.youtube.com/@bizzehdee"},
       {Name = "ko-fi", URL = "https://ko-fi.com/bizzehdee"}

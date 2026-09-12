@@ -11,3 +11,6 @@ $RECYCLE.BIN/
 # OSX
 .DS_Store
 .hugo_build.lock
+
+# Hugo generated resources (resized images)
+/resources/_gen/

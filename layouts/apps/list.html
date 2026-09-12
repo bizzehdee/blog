@@ -1,0 +1,20 @@
+{{ define "main" -}}
+<div class="post">
+  <h1>{{ .Title }}</h1>
+  {{ .Content }}
+  {{ range $app := .Pages.ByWeight -}}
+  <div style="display: flex; gap: 1rem; align-items: flex-start; margin-bottom: 2rem;">
+    {{ with .Resources.Get "icon.png" -}}
+    {{ $icon := .Resize "96x96" -}}
+    <a href="{{ $app.RelPermalink }}" style="flex-shrink: 0;"><img src="{{ $icon.RelPermalink }}" alt="{{ $app.Title }}" width="96" height="96" style="border-radius: 20%; margin: 0;"></a>
+    {{- end }}
+    <div>
+      <h2 style="margin-top: 0;"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+      <p style="margin-bottom: .5rem;">{{ .Description }}</p>
+      <p style="margin-bottom: .5rem;"><strong>{{ partial "app-price.html" . }}</strong></p>
+      {{ with .Params.playStore }}{{ partial "play-badge.html" (dict "url" . "height" 60) }}{{ end }}
+    </div>
+  </div>
+  {{- end }}
+</div>
+{{- end }}

@@ -1,5 +1,5 @@
 $(function() {
-    $('main img').each(function(i, e) {
+    $('main img').not('a img, .no-lightbox').each(function(i, e) {
       $(e).wrap("<a class='fresco' href='" + $(e).attr("src") +  "'></a>");
     });
   });
