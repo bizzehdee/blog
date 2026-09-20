@@ -1,0 +1,7 @@
+{{ define "main" -}}
+<div class="post">
+  <h1>{{ .Title }}</h1>
+  {{ .Content }}
+  {{ with .Parent }}<p><a href="{{ .RelPermalink }}">&larr; {{ .Title }}</a></p>{{ end }}
+</div>
+{{- end }}
