@@ -7,6 +7,7 @@ weight: 2
 description: "Maths crosswords solvable by logic."
 playStore: "https://play.google.com/store/apps/details?id=com.bizzeh.mathscross"
 price: "0"
+layout: "single"
 ---
 
 A crossword made of sums. Fill the grid with digits and operators so every row and column reads as a correct equation.
@@ -18,3 +19,5 @@ A crossword made of sums. Fill the grid with digits and operators so every row a
 - Undo/redo, saved progress, statistics and nine themes
 - Suitable for children of around nine and up
 - No adverts, no in-app purchases, no accounts, no network requests
+
+[Privacy policy](privacy/)

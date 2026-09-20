@@ -7,6 +7,7 @@ weight: 1
 description: "Sudoku with daily puzzles and 4 difficulty levels and no adverts"
 playStore: "https://play.google.com/store/apps/details?id=com.bizzeh.sudoku"
 price: "0"
+layout: "single"
 ---
 
 Sudoku that works offline, with nothing in the way. Every puzzle is generated on your device, so nothing is downloaded and nothing runs out.
@@ -18,3 +19,5 @@ Sudoku that works offline, with nothing in the way. Every puzzle is generated on
 - Stats, streaks, and light, dark and high contrast themes
 - A built-in walkthrough for anyone who has never played
 - No adverts, no analytics, no accounts, no network requests
+
+[Privacy policy](privacy/)
