@@ -43,4 +43,4 @@ If a future version ever collects anything, this policy will be updated before t
 
 ## Contact
 
-Questions about this policy can be raised as an issue on the project's repository: [github.com/bizzehdee/mathscross](https://github.com/bizzehdee/mathscross).
+Email: <dhorrocks@gmail.com>

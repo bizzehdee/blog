@@ -222,5 +222,3 @@ anything different.
 
 <dhorrocks@gmail.com>
 
-This is the address the app itself uses when you send a report (`SettingsScreen.SUPPORT_EMAIL`), so the two
-are always the same. If it ever changes, both change together.
