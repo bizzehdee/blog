@@ -3,8 +3,8 @@ title: "Plateful"
 date: 2026-09-12T09:00:00+01:00
 draft: false
 author: ["darren horrocks"]
-weight: 4
-description: "AI meal planning for you and your family."
+weight: 3
+description: "Meal planning for you and your family."
 playStore: "https://play.google.com/store/apps/details?id=com.bizzeh.plateful"
 price: "Free, with an optional subscription"
 layout: "single"

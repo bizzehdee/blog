@@ -4,7 +4,7 @@ date: 2026-09-12T09:00:00+01:00
 draft: false
 author: ["darren horrocks"]
 weight: 1
-description: "Sudoku with daily puzzles and 4 difficulty levels and no adverts"
+description: "Sudoku with no adverts and no data collection. Free-free"
 playStore: "https://play.google.com/store/apps/details?id=com.bizzeh.sudoku"
 price: "0"
 layout: "single"

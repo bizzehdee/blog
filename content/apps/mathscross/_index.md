@@ -3,7 +3,7 @@ title: "MathsCross"
 date: 2026-09-12T09:00:00+01:00
 draft: false
 author: ["darren horrocks"]
-weight: 2
+weight: 5
 description: "Maths crosswords solvable by logic."
 playStore: "https://play.google.com/store/apps/details?id=com.bizzeh.mathscross"
 price: "0"

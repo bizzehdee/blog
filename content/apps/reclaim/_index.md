@@ -3,8 +3,8 @@ title: "Reclaim"
 date: 2026-09-23T09:00:00+01:00
 draft: false
 author: ["darren horrocks"]
-weight: 5
-description: "Make your photos and videos smaller, on your phone. Nothing is uploaded."
+weight: 3
+description: "Recover your storage space on your phone."
 playStore: "https://play.google.com/store/apps/details?id=com.bizzeh.reclaim"
 price: "Free, with an optional one-time upgrade"
 layout: "single"

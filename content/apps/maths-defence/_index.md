@@ -3,7 +3,7 @@ title: "Maths Defence"
 date: 2026-09-12T09:00:00+01:00
 draft: false
 author: ["darren horrocks"]
-weight: 3
+weight: 4
 description: "A tower defence game where your answers become the towers."
 playStore: "https://play.google.com/store/apps/details?id=com.bizzeh.mathsdefence"
 price: "0"
